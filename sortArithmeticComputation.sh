@@ -1,16 +1,11 @@
 #!/bin/bash -x
 
-#UserCase1 - That takes inputs - a, b & c
+#UserCase4 - Store the results in a Dictionary for every computation."
 read -p "Enter 3 number for A, B and C " a b c
+declare -A resultDic
 
-#UserCase02 - Compute a + b * c
-$(($a+$b*$c))
+resultDic[op1]=$(($a+$b*$c))
+resultDic[op2]=$(($a*$b+$c))
+resultDic[op3]=$(($c+$a/$b))
+resultDic[op4]=$(($a%$b+$c))
 
-#UserCase03 - Compute a * b + c
-$(($a*$b+$c))
-
-#UserCase04 - Compute c + a / b
-$(($c+$a/$b))
-
-#UserCase05 - Compute a % b + c
-$(($a%$b+$c))
