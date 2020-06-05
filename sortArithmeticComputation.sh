@@ -8,3 +8,6 @@ $(($a+$b*$c))
 
 #UserCase03 - Compute a * b + c
 $(($a*$b+$c))
+
+#UserCase04 - Compute c + a / b
+$(($c+$a/$b))
