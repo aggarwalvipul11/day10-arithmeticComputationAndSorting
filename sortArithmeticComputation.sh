@@ -1,6 +1,6 @@
 #!/bin/bash -x
 
-#UserCase7 - Read the values from the Dictionary into the array.
+#UserCase8 - Sort the results to show computation result in the descending order..
 read -p "Enter 3 number for A, B and C " a b c
 
 declare -A resultDic
@@ -16,3 +16,7 @@ for calc in ${!resultDic[@]}
 do
         a[((count++))]=${resultDic[$calc]}
 done
+
+echo ${resultDic[@]}
+c=$(printf "%d\n" ${a[@]} | sort -r -g )
+echo "Values sorted in descending order " ${c[@]}
