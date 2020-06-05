@@ -11,3 +11,6 @@ $(($a*$b+$c))
 
 #UserCase04 - Compute c + a / b
 $(($c+$a/$b))
+
+#UserCase05 - Compute a % b + c
+$(($a%$b+$c))
