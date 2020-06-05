@@ -19,4 +19,4 @@ done
 
 echo ${resultDic[@]}
 c=$(printf "%d\n" ${a[@]} | sort -r -g )
-echo "Values sorted in descending order " ${c[@]}
+echo "Sorted results in descending order: " ${c[@]}
