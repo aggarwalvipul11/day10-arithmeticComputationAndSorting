@@ -2,6 +2,7 @@
 
 #UserCase7 - Read the values from the Dictionary into the array.
 read -p "Enter 3 number for A, B and C " a b c
+
 declare -A resultDic
 
 count=0
